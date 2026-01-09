@@ -1,26 +1,30 @@
 class Employee {
 
-    String name;                     // Each employee has their own name
-    int id;                          // Each employee has their own id
+    String name;                     
+    int id;                          
 
-    static String company = "TCS";   // One copy shared by ALL employees
+    static String company = "TCS";   
 
     Employee(String n, int i) {
         name = n;
         id = i;
     }
 
-    void showDetails() {
+    void showDetails() 
+    {
         System.out.println("Name: " + name + ", ID: " + id + ", Company: " + company);
     }
 
-    static void showCompany() {
+    static void showCompany() 
+    {
         System.out.println("Company Name: " + company);
     }
 }
 
-public class employee_details {
-    public static void main(String[] args) {
+public class employee_details 
+{
+    public static void main(String[] args) 
+    {
 
         Employee e1 = new Employee("Anvi", 101);
         Employee e2 = new Employee("Rohan", 102);
@@ -34,3 +38,4 @@ public class employee_details {
            
     }
 }
+
